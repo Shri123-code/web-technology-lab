@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+body{
+    font-family: "Segoe UI";
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    color: #2b2b52;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+th{
+    background-color: #3c40c6;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+}
+
+td{
+    padding: 14px 18px;
+    font-size: 17px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+td:last-child{
+    padding-right: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea{
+    width: 90%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #c9c9e2;
+    border-radius: 6px;
+    background-color: #fafaff;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color: #575fcf;
+    box-shadow: 0 0 4px rgba(87,95,207,0.4);
+}
+
+textarea{
+    height: 90px;
+    resize: vertical;
+}
+
+button{
+    background-color: #3c40c6;
+    color: white;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin: 8px;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: #1e22aa;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Registration Form - Shriramakrishna Bhat(4MW23CS157)</h1>
+
+<form>
+<table>
+
+<tr>
+    <th colspan="2">Personal Details</th>
+</tr>
+
+<tr>
+    <td>Full Name</td>
+    <td><input type="text" placeholder="Enter full name"></td>
+</tr>
+
+<tr>
+    <td>Email</td>
+    <td><input type="email" placeholder="Enter email"></td>
+</tr>
+
+<tr>
+    <td>Password</td>
+    <td><input type="password" placeholder="Create password"></td>
+</tr>
+
+<tr>
+    <td>Phone Number</td>
+    <td><input type="number" placeholder="Enter phone number"></td>
+</tr>
+
+<tr>
+    <td>Gender</td>
+    <td>
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female
+    </td>
+</tr>
+
+<tr>
+    <td>Country</td>
+    <td>
+        <select>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td>Hobbies</td>
+    <td>
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Music
+        <input type="checkbox"> Sports
+    </td>
+</tr>
+
+<tr>
+    <td>Address</td>
+    <td><textarea placeholder="Enter address"></textarea></td>
+</tr>
+
+<tr>
+    <td colspan="2" style="text-align:center; padding: 18px;">
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </td>
+</tr>
+
+</table>
+</form>
+
+</body>
+</html>
